@@ -1,13 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-        Square square = new Square();
-        square.changeColor("blue");
-        square.makeVisible();
-        Circle circle = new Circle();
-        circle.changeColor("red");
-        circle.makeVisible();
-        Person person = new Person();
-        person.changeColor("green");
-        person.makeVisible();
+        
+        Carta carta = new Carta("K", Carta.Palo.DIAMANTES);
+        Posicion posicion = new Posicion(-110, -110);
+
+        Visualizador.carta(carta, posicion);
     }
 }
