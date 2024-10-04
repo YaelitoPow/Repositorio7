@@ -10,11 +10,11 @@ import java.awt.geom.*;
 
 public class Circle
 {
-    private int diameter;
-    private int xPosition;
-    private int yPosition;
-    private String color;
-    private boolean isVisible;
+    protected int diameter;
+    protected int xPosition;
+    protected int yPosition;
+    protected String color;
+    protected boolean isVisible;
     
     /**
      * Create a new circle at default position with default color.
@@ -168,7 +168,7 @@ public class Circle
     /**
      * Draw the circle with current specifications on screen.
      */
-    private void draw()
+    protected void draw()
     {
         if(isVisible) {
             Canvas canvas = Canvas.getCanvas();

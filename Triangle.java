@@ -9,12 +9,12 @@ import java.awt.*;
 
 public class Triangle
 {
-    private int height;
-    private int width;
-    private int xPosition;
-    private int yPosition;
-    private String color;
-    private boolean isVisible;
+    protected int height;
+    protected int width;
+    protected int xPosition;
+    protected int yPosition;
+    protected String color;
+    protected boolean isVisible;
 
     /**
      * Create a new triangle at default position with default color.
@@ -171,7 +171,7 @@ public class Triangle
     /**
      * Draw the triangle with current specifications on screen.
      */
-    private void draw()
+    protected void draw()
     {
         if(isVisible) {
             Canvas canvas = Canvas.getCanvas();

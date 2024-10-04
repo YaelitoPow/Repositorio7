@@ -11,6 +11,11 @@ public class Posicion {
         return x;
     }
 
+     public void setPosition(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+
     public int getY() {
         return y;
     }

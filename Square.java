@@ -9,11 +9,11 @@ import java.awt.*;
 
 public class Square
 {
-    private int size;
-    private int xPosition;
-    private int yPosition;
-    private String color;
-    private boolean isVisible;
+    protected int size;
+    protected int xPosition;
+    protected int yPosition;
+    protected String color;
+    protected boolean isVisible;
 
     /**
      * Create a new square at default position with default color.
@@ -168,7 +168,7 @@ public class Square
     /**
      * Draw the square with current specifications on screen.
      */
-    private void draw()
+    protected void draw()
     {
         if(isVisible) {
             Canvas canvas = Canvas.getCanvas();
